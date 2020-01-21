@@ -15,7 +15,7 @@ This is the 4th homework in the class, this homework was for the Web-API's unit.
 
 <img src="assets/quiz1.png">
 
-![code quiz image](/Assets/quiz1.png)
+
 
 The Quiz project executes by pressing the start button, once the start button is pressed, the Quiz starts and a countown from 75 seconds starts.
 
@@ -24,4 +24,4 @@ Answer the code related questions within the 75 seconds, however, if you get the
 
 
 <img src="assets/quiz2.png">
-![code quiz image](/Assets/quiz2.png)
+
