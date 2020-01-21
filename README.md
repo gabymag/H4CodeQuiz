@@ -11,7 +11,7 @@ This is the 4th homework in the class, this homework was for the Web-API's unit.
 
 # The Project
 
-![code quiz](./Assets/quiz1.png)
+![code quiz image](./Assets/quiz1.png)
 
 The Quiz project executes by pressing the start button, once the start button is pressed, the Quiz starts and a countown from 75 seconds starts.
 
