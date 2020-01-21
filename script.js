@@ -45,11 +45,27 @@ var questions = [
         choice4: "neither the <body> or the <head>",
         answer: 1
       },
+      {
+        question: "Which of the following is not a JS data type",
+        choice1: "Boolean",
+        choice2: "String",
+        choice3: "Jule",
+        choice4: "Number",
+        answer: 3
+      },
+      {
+        question: "Which of the following is a type of error in Javascript?",
+        choice1: "Run time error",
+        choice2: "Load time error",
+        choice3: "Logical error",
+        choice4: "All of the above",
+        answer: 4
+      },
 ]
 
 
-
-startBtn.addEventListener('click', DoStuff);//listening for click event on startBtn, run the startQuiz function
+//listening for click events on the following 
+startBtn.addEventListener('click', DoStuff);
 answerChoices.children[0].addEventListener('click', DoStuff);
 answerChoices.children[1].addEventListener('click', DoStuff);
 answerChoices.children[2].addEventListener('click', DoStuff);
@@ -57,6 +73,7 @@ answerChoices.children[3].addEventListener('click', DoStuff);
 SubmitButton.addEventListener('click', DoStuff);
 goBack.addEventListener('click', DoStuff);
 
+//main function that starts 
 function DoStuff(){
   if(QuestionNum == -1){
     QuestionNum++;
@@ -80,7 +97,7 @@ function DoStuff(){
         clearTimeout(hideElement);//cancels out the setTimeout function
         setTimeout(hideElement,1000);//after 1 sec hide the text 
         QuestionNum++;
-        if(QuestionNum == questions.length  /*3*/ ){//once it reaches all questions, them hide the questions
+        if(QuestionNum == questions.length   ){//once it reaches all questions, them hide the questions
           questionList.classList.add('hide');
           //display Input Box
           clearInterval(a); // stops the timer
@@ -119,7 +136,7 @@ function startQuiz(){//when quiz is started the start button needs to hide and t
 }
 
 
-  //calling the questions and choices, take the inner text set it equal to [i]th element in the questions array, and the same for the answer buttons, calling the child buttons
+  //calling the questions and choices, take the inner text set it equal to the [i]th element in the questions array, and the same for the answer buttons, calling the child buttons
  function viewQuestion(i){
    questionElement.innerText = questions[i].question;
    answerChoices.children[0].innerText = questions[i].choice1;
@@ -129,6 +146,7 @@ function startQuiz(){//when quiz is started the start button needs to hide and t
 
  }
 
+ //when answer option is chosen
  function chooseAnswer(answer,j){
     if(i == questions[QuestionNum].answer) {
         AnswerText.innerHTML = "Correct!";
