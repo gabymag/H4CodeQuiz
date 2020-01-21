@@ -19,17 +19,43 @@
         <button id= "startBtn" type="button" class="btn btn-primary btn-lg">START</button>
       </div>
 </header>
-      
+ <!-- Div that holds the question buttons -->
 <div id="question-list" class="hide">
 <div id="question">Question</div>
+<div id="timer">
+    <p>Time: 75</p>
+ </div>
         <div id="answer-selections" class="answer-btns">
         <button class="btn">Option 1</button>
         <button class="btn">Option 2</button>
         <button class="btn">Option 3</button>
         <button class="btn">Option 4</button>       
- </div>
+</div>
+</div>
 
 
+
+<!-- "done screen" -->
+<div id= "doneScreen" class = "hide">
+    <h2>All done!</h2>
+    <p id = "YourScore">Your score is </p>
+<div id = "inputField" class="input-group"></div>
+    <input  type="text" id = "savedinitials" name="name"  placeholder="enter initials"/>
+    <button id= "submitBtn" type="button" class="btn btn-primary btn-lg">SUBMIT</button>
+</div>
+</div>
+<!-- high score screen -->
+<div id = "high-score-screen" class ="hide">
+    <h2>High Scores!</h2>
+    <p id ="high-score-show"></p>
+    <button id= "back-to-start" type="button" class="btn btn-primary btn-lg">Go Back</button>
+</div>
+
+<!-- text that appears at the bottom if user got it wrong or right -->
+<div id = "AnswerText" class="hide" display="none">
+    <hr>
+    
+</div>
 
 
 <script src="script.js"></script>    
