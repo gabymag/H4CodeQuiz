@@ -75,6 +75,7 @@ goBack.addEventListener('click', DoStuff);
 
 //main function that starts 
 function DoStuff(){
+  console.log(DoStuff)
   if(QuestionNum == -1){
     QuestionNum++;
     startQuiz();
@@ -128,6 +129,7 @@ function DoStuff(){
 }
 
 function startQuiz(){//when quiz is started the start button needs to hide and the container that holds the quiz questions needs to show up
+    console.log(startQuiz)
     startBtn.classList.add('hide');
     introDisplay.classList.add('hide');
     questionList.classList.remove('hide');
@@ -138,6 +140,7 @@ function startQuiz(){//when quiz is started the start button needs to hide and t
 
   //calling the questions and choices, take the inner text set it equal to the [i]th element in the questions array, and the same for the answer buttons, calling the child buttons
  function viewQuestion(i){
+   console.log(viewQuestion);
    questionElement.innerText = questions[i].question;
    answerChoices.children[0].innerText = questions[i].choice1;
    answerChoices.children[1].innerText = questions[i].choice2;
@@ -163,9 +166,11 @@ function hideElement(){//function for the wrong or correct text at the bottom
   AnswerText.classList.add('hide');//hides the wrong or correct response
 }
 function decrementTimer(i){ // score function
+  // console.log(decrementTimer);
   time=time - i;
   if(time < 0){
     time = 0;
+    
   }
   timerDisplay.innerText = "Time: " + time
 

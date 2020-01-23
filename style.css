@@ -28,9 +28,6 @@ body{
 .hide{
     display: none;
 }
-#time{
-    float: right;
-}
 #high-score-show{
     background-color: plum;
     display: flex;
